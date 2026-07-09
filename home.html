@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Site de Notícias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Site de Notícias</h1>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-navigation" aria-label="Abrir menu">☰</button>
+        <nav id="site-navigation">
+            <a href="home.html">Início</a>
+            <a href="noticiarecente.html">Notícias recentes</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Economia & Negócios</h2>
+            <article class="card">
+                <h3>Startup de carne cultivada em laboratório abre capital e surpreende analistas</h3>
+                <p>A GreenMeat Inc. viu suas ações saltarem 15% na primeira hora de negociação. O sucesso reflete uma mudança drástica nos hábitos de consumo da Geração Z e a busca por investimentos ESG.</p>
+            </article>
+            <article class="card">
+                <h3>Mercado de trabalho em transformação: como a inteligência artificial está impactando empregos e carreiras</h3>
+                <p>Especialistas discutem os desafios e oportunidades que a IA traz para o mercado de trabalho, destacando a necessidade de requalificação profissional e adaptação às novas tecnologias.</p>
+            </article>
+        </section>
+        <section>
+            <h2>Esportes</h2>
+            <article class="card">
+                <h3>Brasil conquista a Copa América de Futebol Feminino com vitória histórica sobre a Argentina</h3>
+                <p>A seleção brasileira de futebol feminino venceu a Argentina por 3 a 1 na final da Copa América, garantindo seu quinto título e consolidando sua posição como potência no futebol feminino sul-americano.</p>
+            </article>
+            <article class="card">
+                <h3>NBA: Lakers e Warriors protagonizam duelo épico em jogo de abertura da temporada</h3>
+                <p>LeBron James e Stephen Curry lideraram suas equipes em um confronto emocionante que terminou com vitória dos Lakers por 120 a 115, prometendo uma temporada cheia de rivalidades e grandes jogos.</p>
+            </article>
+        </section>   
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Site de Notícias</p>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const siteNav = document.getElementById('site-navigation');
+        if (menuToggle && siteNav) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = siteNav.classList.toggle('open');
+                menuToggle.setAttribute('aria-expanded', isOpen);
+            });
+        }
+    </script>
+</body>
+</html>

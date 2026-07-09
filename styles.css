@@ -1,0 +1,225 @@
+:root {
+    font-size: 62.5%;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 5rem;
+    font-family: 'times new roman';
+}
+
+h2 {
+    text-align: center;
+    color: red;
+    font-size: 3rem;
+    font-family: 'times new roman';
+    background-color: #f2f2f2;
+}
+
+h3 {
+    text-align: center;
+    color: black;
+    font-size: 2.5rem;
+    font-family: 'times new roman';
+}
+
+p {
+    color: black;
+    margin: 0 0 1em;
+    font-size: 2rem;
+    font-family: 'times new roman';
+
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.menu-toggle {
+    display: none;
+    background-color: #111111;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.2rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin: 0;
+}
+
+nav {
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    border-color: #ccc;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: inline-flex;
+    }
+
+    nav {
+        display: none;
+        width: 50%;
+        margin-top: 0.75rem;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        margin: 0 0 0.75rem;
+    }
+
+    nav a:last-child {
+        margin-bottom: 0;
+    }
+
+    nav {
+        padding: 0;
+    }
+}
+
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    background-color: #f2f2f2;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.card h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.card p {
+    text-align: center;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ccc;
+    font-size: 0.8rem;
+    color: #e9e7e7;
+}
+
+.recent-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-info, .social-media {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social-media li {
+    margin: 0;
+}
+
+.social-media a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    border-radius: 0.875rem;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.05);
+    color: #111111;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.social-media a:hover {
+    transform: translateY(-0.15rem);
+    background-color: #eef4ff;
+    box-shadow: 0 0.65rem 1rem rgba(0, 0, 0, 0.08);
+}
+
+.social-media .icon {
+    display: inline-flex;
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    font-size: 1.2rem;
+}
+
+.social-media .facebook .icon {
+    background-color: #1877f2;
+    color: #ffffff;
+}
+
+.social-media .twitter .icon {
+    background-color: #1da1f2;
+    color: #ffffff;
+}
+
+.social-media .instagram .icon {
+    background: radial-gradient(circle at 30% 30%, #f9ed32 0%, #f58220 35%, #c02d72 65%, #5b3de5 100%);
+    color: #ffffff;
+}
+
+.address {
+    text-align: center;
+    margin: 2rem 0;
+}
+

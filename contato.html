@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Site de Notícias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Site de Notícias</h1>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-navigation" aria-label="Abrir menu">☰</button>
+        <nav id="site-navigation">
+            <a href="home.html">Início</a>
+            <a href="noticiarecente.html">Notícias recentes</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-info">
+            <h2>Contato</h2>
+            <p>Para entrar em contato conosco, envie um e-mail para <a href="mailto:contato@site-noticias.com">contato@site-noticias.com</a>.</p>
+        </section>
+        <section class="social-media">
+            <h2>Redes Sociais</h2>
+            <p>Siga-nos nas redes sociais para ficar por dentro das últimas notícias:</p>
+            <ul>
+                <li><a href="https://www.facebook.com/sitenoticias" class="social-link facebook"><span class="icon" aria-hidden="true">📘</span><span>Facebook</span></a></li>
+                <li><a href="https://www.twitter.com/sitenoticias" class="social-link twitter"><span class="icon" aria-hidden="true">🐦</span><span>Twitter</span></a></li>
+                <li><a href="https://www.instagram.com/sitenoticias" class="social-link instagram"><span class="icon" aria-hidden="true">📸</span><span>Instagram</span></a></li>
+            </ul>
+        </section>
+            <section class="address">
+                <h2>Endereço</h2>
+                <p>Estamos localizados na Rua das Notícias, 123, Centro, Cidade, País.</p>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Site de Notícias</p>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const siteNav = document.getElementById('site-navigation');
+        if (menuToggle && siteNav) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = siteNav.classList.toggle('open');
+                menuToggle.setAttribute('aria-expanded', isOpen);
+            });
+        }
+    </script>
+</body>
+</html>

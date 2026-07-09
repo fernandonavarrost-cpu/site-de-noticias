@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Recentes - Site de Notícias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Site de Notícias</h1>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-navigation" aria-label="Abrir menu">☰</button>
+        <nav id="site-navigation">
+            <a href="home.html">Início</a>
+            <a href="noticiarecente.html">Notícias recentes</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Notícias Recentes</h2>
+            <article class="card">
+                <h3>Minimalismo Digital: Por que os "dumbphones" estão voltando à moda</h3>
+                <p>Cansados das notificações incessantes, jovens adultos estão trocando smartphones de última geração por aparelhos antigos que apenas fazem chamadas e enviam SMS. É o movimento Slow Tech ganhando força.</p>
+            </article>
+        </section>
+        <section class="recent-news">
+            <article class="card">
+                <h3>Descoberta de exoplaneta habitável a apenas 12 anos-luz de distância anima astrônomos</h3>
+                <p>O exoplaneta, batizado de "Eden-1", tem condições que podem suportar vida como conhecemos. A descoberta foi feita usando o telescópio espacial James Webb e promete revolucionar a busca por vida extraterrestre.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Site de Notícias</p>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const siteNav = document.getElementById('site-navigation');
+        if (menuToggle && siteNav) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = siteNav.classList.toggle('open');
+                menuToggle.setAttribute('aria-expanded', isOpen);
+            });
+        }
+    </script>
+</body>
+</html>
