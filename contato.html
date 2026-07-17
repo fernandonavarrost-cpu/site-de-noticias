@@ -5,17 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Site de Notícias</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Site de Notícias</h1>
-        <button class="menu-toggle" aria-expanded="false" aria-controls="site-navigation" aria-label="Abrir menu">☰</button>
-        <nav id="site-navigation">
-            <a href="home.html">Início</a>
-            <a href="noticiarecente.html">Notícias recentes</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-    </header>
+    <header></header>
     <main>
         <section class="contact-info">
             <h2>Contato</h2>
@@ -36,18 +29,6 @@
             </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Site de Notícias</p>
-    </footer>
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const siteNav = document.getElementById('site-navigation');
-        if (menuToggle && siteNav) {
-            menuToggle.addEventListener('click', () => {
-                const isOpen = siteNav.classList.toggle('open');
-                menuToggle.setAttribute('aria-expanded', isOpen);
-            });
-        }
-    </script>
+    <footer></footer>
 </body>
 </html>
