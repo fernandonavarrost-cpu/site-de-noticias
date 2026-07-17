@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'self'">
     <title>Contato - Site de Notícias</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,9 +26,9 @@
             <h2>Redes Sociais</h2>
             <p>Siga-nos nas redes sociais para ficar por dentro das últimas notícias:</p>
             <ul>
-                <li><a href="https://www.facebook.com/sitenoticias" class="social-link facebook"><span class="icon" aria-hidden="true">📘</span><span>Facebook</span></a></li>
-                <li><a href="https://www.twitter.com/sitenoticias" class="social-link twitter"><span class="icon" aria-hidden="true">🐦</span><span>Twitter</span></a></li>
-                <li><a href="https://www.instagram.com/sitenoticias" class="social-link instagram"><span class="icon" aria-hidden="true">📸</span><span>Instagram</span></a></li>
+                <li><a href="https://www.facebook.com/sitenoticias" class="social-link facebook" target="_blank" rel="noopener noreferrer"><span class="icon" aria-hidden="true">📘</span><span>Facebook</span></a></li>
+                <li><a href="https://www.twitter.com/sitenoticias" class="social-link twitter" target="_blank" rel="noopener noreferrer"><span class="icon" aria-hidden="true">🐦</span><span>Twitter</span></a></li>
+                <li><a href="https://www.instagram.com/sitenoticias" class="social-link instagram" target="_blank" rel="noopener noreferrer"><span class="icon" aria-hidden="true">📸</span><span>Instagram</span></a></li>
             </ul>
         </section>
             <section class="address">
@@ -39,15 +40,6 @@
     <footer>
         <p>&copy; 2026 Site de Notícias</p>
     </footer>
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const siteNav = document.getElementById('site-navigation');
-        if (menuToggle && siteNav) {
-            menuToggle.addEventListener('click', () => {
-                const isOpen = siteNav.classList.toggle('open');
-                menuToggle.setAttribute('aria-expanded', isOpen);
-            });
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
