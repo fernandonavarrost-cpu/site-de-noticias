@@ -1,19 +1,24 @@
+/* ===== BASE ===== */
 :root {
     font-size: 62.5%;
 }
 
+body {
+    margin: 0;
+    font-family: 'times new roman', serif;
+}
+
+/* ===== TIPOGRAFIA ===== */
 h1 {
     text-align: center;
     color: black;
     font-size: 5rem;
-    font-family: 'times new roman';
 }
 
 h2 {
     text-align: center;
     color: red;
     font-size: 3rem;
-    font-family: 'times new roman';
     background-color: #f2f2f2;
 }
 
@@ -21,21 +26,19 @@ h3 {
     text-align: center;
     color: black;
     font-size: 2.5rem;
-    font-family: 'times new roman';
 }
 
 p {
     color: black;
     margin: 0 0 1em;
     font-size: 2rem;
-    font-family: 'times new roman';
-
 }
 
 p + p {
-  margin-top: 1em;
+    margin-top: 1em;
 }
 
+/* ===== CABEÇALHO E NAVEGAÇÃO ===== */
 header {
     display: flex;
     flex-direction: column;
@@ -81,38 +84,36 @@ nav a:hover {
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: inline-flex;
-    }
-
-    nav {
-        display: none;
-        width: 50%;
-        margin-top: 0.75rem;
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    nav.open {
-        display: flex;
-    }
-
-    nav a {
-        display: block;
-        width: 100%;
-        margin: 0 0 0.75rem;
-    }
-
-    nav a:last-child {
-        margin-bottom: 0;
-    }
-
-    nav {
-        padding: 0;
-    }
+/* ===== CONTEÚDO / NOTÍCIAS ===== */
+.lista-de-conteudos {
+    display: block;
+    padding: 1rem;
+    font-size: 0;
 }
 
+.noticia-card {
+    display: inline-block;
+    width: calc(50% - 1rem);
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    background-color: #f2f2f2;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.noticia-card > h2 {
+    display: block;
+}
+
+.noticia-card > .card {
+    display: block;
+    margin: 0 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 .card {
     border: 1px solid #ccc;
@@ -137,15 +138,6 @@ nav a:hover {
     margin: 0;
 }
 
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #f2f2f2;
-    border-top: 1px solid #ccc;
-    font-size: 0.8rem;
-    color: #e9e7e7;
-}
-
 .recent-news {
     display: flex;
     flex-wrap: wrap;
@@ -153,7 +145,9 @@ footer {
     gap: 1rem;
 }
 
-.contact-info, .social-media {
+/* ===== PÁGINA DE CONTATO ===== */
+.contact-info,
+.social-media {
     text-align: center;
     margin: 2rem 0;
 }
@@ -223,3 +217,51 @@ footer {
     margin: 2rem 0;
 }
 
+/* ===== RODAPÉ ===== */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ccc;
+    font-size: 0.8rem;
+    color: #e9e7e7;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: inline-flex;
+    }
+
+    nav {
+        display: none;
+        width: 50%;
+        margin-top: 0.75rem;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        margin: 0 0 0.75rem;
+    }
+
+    nav a:last-child {
+        margin-bottom: 0;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    .noticia-card {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
