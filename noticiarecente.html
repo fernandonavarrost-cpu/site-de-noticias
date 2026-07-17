@@ -41,8 +41,13 @@
         if (menuToggle && siteNav) {
             menuToggle.addEventListener('click', () => {
                 const isOpen = siteNav.classList.toggle('open');
-                menuToggle.setAttribute('aria-expanded', isOpen);
+                menuToggle.setAttribute('aria-expanded', String(isOpen));
             });
+        } else {
+            console.warn(
+                'Menu de navegação não inicializado: elementos ausentes',
+                { menuToggle: !!menuToggle, siteNav: !!siteNav }
+            );
         }
     </script>
 </body>
