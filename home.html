@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'self'">
     <title>Home - Site de Notícias</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -47,15 +48,6 @@
     <footer>
         <p>&copy; 2026 Site de Notícias</p>
     </footer>
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const siteNav = document.getElementById('site-navigation');
-        if (menuToggle && siteNav) {
-            menuToggle.addEventListener('click', () => {
-                const isOpen = siteNav.classList.toggle('open');
-                menuToggle.setAttribute('aria-expanded', isOpen);
-            });
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
