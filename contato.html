@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Site de Notícias</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -39,15 +40,5 @@
     <footer>
         <p>&copy; 2026 Site de Notícias</p>
     </footer>
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const siteNav = document.getElementById('site-navigation');
-        if (menuToggle && siteNav) {
-            menuToggle.addEventListener('click', () => {
-                const isOpen = siteNav.classList.toggle('open');
-                menuToggle.setAttribute('aria-expanded', isOpen);
-            });
-        }
-    </script>
 </body>
 </html>

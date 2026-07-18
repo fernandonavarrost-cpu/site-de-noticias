@@ -5,45 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notícias Recentes - Site de Notícias</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="application/json" id="dados-noticias">
+[
+  {
+    "id": 1,
+    "titulo": "Startup de carne cultivada em laboratório abre capital e surpreende analistas",
+    "resumo": "A GreenMeat Inc. viu suas ações saltarem 15% na primeira hora de negociação. O sucesso reflete uma mudança drástica nos hábitos de consumo da Geração Z e a busca por investimentos ESG.",
+    "categoria": "economia",
+    "data": "2026-07-14"
+  },
+  {
+    "id": 2,
+    "titulo": "Mercado de trabalho em transformação: como a inteligência artificial está impactando empregos e carreiras",
+    "resumo": "Especialistas discutem os desafios e oportunidades que a IA traz para o mercado de trabalho, destacando a necessidade de requalificação profissional e adaptação às novas tecnologias.",
+    "categoria": "economia",
+    "data": "2026-07-15"
+  },
+  {
+    "id": 3,
+    "titulo": "Brasil conquista a Copa América de Futebol Feminino com vitória histórica sobre a Argentina",
+    "resumo": "A seleção brasileira de futebol feminino venceu a Argentina por 3 a 1 na final da Copa América, garantindo seu quinto título e consolidando sua posição como potência no futebol feminino sul-americano.",
+    "categoria": "esportes",
+    "data": "2026-07-13"
+  },
+  {
+    "id": 4,
+    "titulo": "NBA: Lakers e Warriors protagonizam duelo épico em jogo de abertura da temporada",
+    "resumo": "LeBron James e Stephen Curry lideraram suas equipes em um confronto emocionante que terminou com vitória dos Lakers por 120 a 115, prometendo uma temporada cheia de rivalidades e grandes jogos.",
+    "categoria": "esportes",
+    "data": "2026-07-12"
+  },
+  {
+    "id": 5,
+    "titulo": "Minimalismo Digital: por que os 'dumbphones' estão voltando à moda",
+    "resumo": "Cansados das notificações incessantes, jovens adultos estão trocando smartphones de última geração por aparelhos antigos que apenas fazem chamadas e enviam SMS. É o movimento Slow Tech ganhando força.",
+    "categoria": "tecnologia",
+    "data": "2026-07-16"
+  },
+  {
+    "id": 6,
+    "titulo": "Descoberta de exoplaneta habitável a apenas 12 anos-luz de distância anima astrônomos",
+    "resumo": "O exoplaneta, batizado de 'Eden-1', tem condições que podem suportar vida como conhecemos. A descoberta foi feita usando o telescópio espacial James Webb e promete revolucionar a busca por vida extraterrestre.",
+    "categoria": "tecnologia",
+    "data": "2026-07-17"
+  },
+  {
+    "id": 7,
+    "titulo": "Inteligência artificial cria proteínas inéditas que podem revolucionar a medicina",
+    "resumo": "Pesquisadores utilizaram redes neurais profundas para projetar proteínas sintéticas com funções específicas, abrindo caminho para novos tratamentos contra doenças até então incuráveis.",
+    "categoria": "tecnologia",
+    "data": "2026-07-18"
+  },
+  {
+    "id": 8,
+    "titulo": "Festival de Cinema Independente revela novos talentos do audiovisual brasileiro",
+    "resumo": "A 15ª edição do festival reuniu mais de 200 produções de 18 estados, premiando curtas e longas-metragens que abordam temas como identidade, memória e transformação social.",
+    "categoria": "cultura",
+    "data": "2026-07-16"
+  },
+  {
+    "id": 9,
+    "titulo": "Museus brasileiros batem recorde de visitação após reabertura",
+    "resumo": "Levantamento do Ibram aponta crescimento de 40% no número de visitantes em relação ao período pré-pandemia, impulsionado por exposições imersivas e programação educativa ampliada.",
+    "categoria": "cultura",
+    "data": "2026-07-15"
+  },
+  {
+    "id": 10,
+    "titulo": "Estudo revela que ler antes de dormir melhora a qualidade do sono em até 40%",
+    "resumo": "Pesquisadores da Universidade de São Paulo acompanharam 500 voluntários e concluíram que a leitura de livros impressos reduz os níveis de cortisol e facilita a transição para o sono profundo.",
+    "categoria": "saude",
+    "data": "2026-07-17"
+  },
+  {
+    "id": 11,
+    "titulo": "OMS alerta para importância da vacinação infantil após queda nas coberturas globais",
+    "resumo": "Dados de 2025 mostram que 25 milhões de crianças deixaram de receber vacinas essenciais. A organização reforça que a imunização previne até 4 milhões de mortes por ano no mundo.",
+    "categoria": "saude",
+    "data": "2026-07-14"
+  },
+  {
+    "id": 12,
+    "titulo": "Brasil anuncia plano nacional de saúde mental com investimento recorde de R$ 2 bilhões",
+    "resumo": "O programa prevê a criação de 500 novos CAPS em todo o país, capacitação de profissionais da atenção básica e campanhas de conscientização sobre depressão e ansiedade.",
+    "categoria": "saude",
+    "data": "2026-07-18"
+  }
+]
+    </script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Site de Notícias</h1>
-        <button class="menu-toggle" aria-expanded="false" aria-controls="site-navigation" aria-label="Abrir menu">☰</button>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-navigation" aria-label="Abrir menu">&#9776;</button>
         <nav id="site-navigation">
             <a href="home.html">Início</a>
             <a href="noticiarecente.html">Notícias recentes</a>
             <a href="contato.html">Contato</a>
         </nav>
     </header>
+
     <main>
         <section>
             <h2>Notícias Recentes</h2>
-            <article class="card">
-                <h3>Minimalismo Digital: Por que os "dumbphones" estão voltando à moda</h3>
-                <p>Cansados das notificações incessantes, jovens adultos estão trocando smartphones de última geração por aparelhos antigos que apenas fazem chamadas e enviam SMS. É o movimento Slow Tech ganhando força.</p>
-            </article>
         </section>
-        <section class="recent-news">
-            <article class="card">
-                <h3>Descoberta de exoplaneta habitável a apenas 12 anos-luz de distância anima astrônomos</h3>
-                <p>O exoplaneta, batizado de "Eden-1", tem condições que podem suportar vida como conhecemos. A descoberta foi feita usando o telescópio espacial James Webb e promete revolucionar a busca por vida extraterrestre.</p>
-            </article>
-        </section>
+        <div id="conteudo-recentes"></div>
     </main>
 
     <footer>
         <p>&copy; 2026 Site de Notícias</p>
     </footer>
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const siteNav = document.getElementById('site-navigation');
-        if (menuToggle && siteNav) {
-            menuToggle.addEventListener('click', () => {
-                const isOpen = siteNav.classList.toggle('open');
-                menuToggle.setAttribute('aria-expanded', isOpen);
-            });
-        }
-    </script>
 </body>
 </html>
